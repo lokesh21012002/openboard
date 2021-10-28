@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>OpenBoard Clone</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/windows/32/000000/edit--v1.png" type="image/x-icon" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+  
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+    
+
+</head>
+<body>
+
+
+   
+    
+
+    <div class="options-cont">
+       
+        <i class="fas fa-bars a"></i>
+    </div>
+    <div class="tools-cont scale-tools">
+        <i class="fas fa-pencil-alt fa-3x pencil"></i>
+        <i class="fad fa-eraser fa-3x eraser eraser"></i>
+        <i class="fas fa-download fa-3x download"></i>
+        <i class="fas fa-upload fa-3x upload"></i> 
+        <i class="fas fa-sticky-note fa-3x sticky-notes"></i>
+        <i class="fas fa-redo fa-3x redo"></i>
+        <i class="fas fa-undo fa-3x undo"></i>
+
+
+    </div>
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+        <input type="range" min="2" max="10" value="3" class="pencil-width">
+    
+        </div>
+        <div class="pencil-color-cont">
+            <div class=" black pencil-color"></div>
+            <div class=" blue  pencil-color"></div>
+            <div class=" red pencil-color"></div>
+
+        </div>
+    </div>
+    <div class="eraser-tool-cont">
+        <input type="range" min="2" max="20" value="10" class="eraser-width">
+          
+    </div>
+    <canvas >
+
+    </canvas>
+    
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js" integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs" crossorigin="anonymous"></script>
+    <script>
+        let socket=io.connect("http://localhost:5000");
+
+
+
+
+
+    </script>
+
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+
+   
+</body>
+</html>
