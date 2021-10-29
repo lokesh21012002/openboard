@@ -2,4 +2,5 @@ I have made this personal project called openboard a simple real time collaborat
 Tech stack used in this project : 
 Frontend-- HTML5,CSS3,Bootstrap4,Javascript.
 Backend-- Express.js,socket,socket.io.
-API--  Canvas API for drwaing
+API--  Canvas API for drwaing .
+Deployment on Heroku platform.
